@@ -1,0 +1,21 @@
+/*----- libs in project -----*/
+@import "libs/bootstrap-reboot";
+@import "libs/fonts";
+/*-----/ libs in project /-----*/
+
+/*----- base styles in project -----*/
+@import "base/mixins";
+@import "base/variables";
+@import "base/base-style";
+/*-----/ base styles in project /-----*/
+
+/*----- components styles in project -----*/
+@import "components/header";
+@import "components/sign-up";
+@import "components/js-adventure";
+@import "components/css-adventure";
+@import "components/html-adventure";
+@import "components/footer";
+/*----- components styles in project -----*/
+
+

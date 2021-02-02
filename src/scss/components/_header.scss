@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+    min-height: 100px;
+    padding: 40px 70px;
+    color:white;
+    background-color:$color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid red;
+
+    &__logo-container{
+
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__nav-list{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
