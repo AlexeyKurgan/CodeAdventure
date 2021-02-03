@@ -1,9 +1,8 @@
-@font-face {
-  font-family: "Big John"; 
-  src: url("//db.onlinewebfonts.com/t/65512fc0c1cc10babc352afa2959c05a.eot"); 
-  src: url("//db.onlinewebfonts.com/t/65512fc0c1cc10babc352afa2959c05a.eot?#iefix") format("embedded-opentype"), 
-  url("//db.onlinewebfonts.com/t/65512fc0c1cc10babc352afa2959c05a.woff2") format("woff2"), 
-  url("//db.onlinewebfonts.com/t/65512fc0c1cc10babc352afa2959c05a.woff") format("woff"), 
-  url("//db.onlinewebfonts.com/t/65512fc0c1cc10babc352afa2959c05a.ttf") format("truetype"), 
-  url("//db.onlinewebfonts.com/t/65512fc0c1cc10babc352afa2959c05a.svg#Big John") format("svg"); 
+@font-face{
+  font-family: 'StargazeRegular';
+  src: url('../fonts/Stargaze Regular.otf');
+  src: url('../fonts/Stargaze Regular.otf') format('eot'),
+  url('../fonts/Stargaze Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
