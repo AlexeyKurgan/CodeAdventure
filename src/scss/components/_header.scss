@@ -51,7 +51,7 @@
             text-decoration: none;
             color:#ffffff;
             display: block;
-            padding: 10px 20px;
+            padding: 10px 10px;
             transition: all ease-out 0.5s;
             outline:1px solid transparent;
 
@@ -60,6 +60,17 @@
                 color:$color7;
                 transition: all ease-out 0.5s;
             }
+        }
+    }
+
+    &__search-container{
+        cursor: pointer;
+        font-size: 25px;
+        transition: all ease-out 0.8s;
+    
+        &:hover{
+            color:$color5;
+            transition: all ease-out 0.8s;
         }
     }
 
