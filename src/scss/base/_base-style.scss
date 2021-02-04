@@ -15,9 +15,8 @@ body {
   letter-spacing: 2px;
 }
 .container{
-  width: 1171px;
+  width: 1600px;
   margin: 0 auto;
-  // border:1px solid yellow;
 }
 
 .btn{
@@ -32,4 +31,15 @@ body {
       text-decoration: none;
       color:#ffffff;
   }
+}
+
+.title{
+  margin: 0;
+  font-size: 40px;
+  text-align:center;
+}
+
+.description{
+  max-width: 381px;
+  text-align: center;
 }

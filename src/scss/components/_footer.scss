@@ -1,5 +1,161 @@
 .footer{
     width: 100%;
-    min-height: 600px;
+    min-height: 400px;
+    padding: 40px 70px;
     background-color:$color1;
+    display: flex;
+    align-items: center;
+
+    &__inner{
+        // border:1px solid yellow;
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__column{
+        width: 25%;
+
+        &_grow{
+            padding: 0 40px;
+            flex-grow: 1;
+        }
+    }
+
+    &__logo{
+        margin-bottom: 75px;
+        font-size: 14px;
+
+        img{
+            width: 50px;
+        }
+
+        a{
+            color:#ffffff;
+            text-decoration: none;
+        }
+    }
+
+    &__resource-promo{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+
+        span{
+            max-width: 335px;
+        }
+    }
+
+    &__nav-list{
+        // border:1px solid red;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:50px 50px;
+        justify-items: end;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 47px;
+        padding: 0;
+        list-style: none;
+        font-size: 14px;
+    }
+
+    &__nav-item{
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color:#ffffff;
+            display: block;
+            padding: 5px;
+            transition: all ease-out 0.5s;
+            outline:1px solid transparent;
+
+            &:hover{
+                outline:1px solid $color5;
+                color:$color7;
+                transition: all ease-out 0.5s;
+            }
+        }
+    }
+
+    &__language{
+        display: flex;
+        align-items: baseline;
+        padding-left: 50px;
+
+        .current{
+            background-color:$color5;
+        }
+
+        &-title{
+            font-size: 13px;
+            padding-right: 40px;
+        }
+
+        &-eng,
+        &-ru{
+            font-family: 'StargazeRegular',sans-serif;
+            background-color:$color2;
+            cursor: pointer;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: all ease-out 0.8s;
+
+            &:hover{
+                background-color:$color5;
+                transition: all ease-out 0.8s;
+           }
+        }
+    }
+
+    &__settings-theme{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+
+        &-btn{
+            font-family: 'StargazeRegular',sans-serif;
+            background-color:$color2;
+            cursor: pointer;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-right: 10px;
+            transition: all ease-out 0.8s;
+
+
+            &:hover{
+                background-color:$color5;
+                transition: all ease-out 0.8s;
+           }
+        }
+    }
+
+    &__social-list{
+        display: flex;
+        justify-content: space-evenly;
+        list-style:none;
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    &__social-item{
+        font-size: 40px;
+        
+        a{
+            color:#ffffff;
+            text-decoration: none;
+            transition: all ease-out 0.8s;
+
+            &:hover{
+                color:$color5;
+                transition: all ease-out 0.8s;
+            }
+        }
+    }
+
+    &__copyright{
+        font-size: 14px;
+    }
 }

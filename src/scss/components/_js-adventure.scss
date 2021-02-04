@@ -9,7 +9,6 @@
     &__icons-container{
         position: relative;
         width: 50%;
-        // border:1px solid yellow;
     }
 
     &__icon{
@@ -80,28 +79,22 @@
         justify-content: center;
         align-items: center;
         width: 50%;
-        // border:1px solid green;
 
         i{
             position: absolute;
-            top: 37%;
+            top: 36%;
             right: 20%;
             font-size: 50px;
-            color:rgb(199, 199, 1);
+            color:#F3D55B;
             z-index: 22;
         }
     }
 
     &__title{
-        margin: 0;
-        font-size: 40px;
-        text-align:center;
         margin-bottom: 30px;
     }
 
     &__desc{
-        max-width: 381px;
-        text-align: center;
         margin-bottom: 30px;
     }
 
