@@ -5,6 +5,7 @@
     background-color:$color5;
     padding: 40px 70px;
     display: flex;
+    overflow: hidden;
     
     &__icons-container{
         position: relative;
@@ -63,6 +64,8 @@
             top: 50%;
             right: 40%;
             width: 50px;
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
         }
         &:nth-child(9){
             position: absolute;

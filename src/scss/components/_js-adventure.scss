@@ -31,7 +31,7 @@
             position: absolute;
             top: 0;
             right: 0;
-
+            
         }
         &:nth-child(4){
             width: 170px;
@@ -46,10 +46,10 @@
             right: 10%;
         }
         &:nth-child(6){
-            width: 50px;
+            width: 90px;
             position: absolute;
-            top: 20%;
-            left: 30%;
+            top: 0;
+            left: 35%;
         }
         &:nth-child(7){
             width: 50px;
@@ -62,6 +62,8 @@
             top: 50%;
             right: 40%;
             width: 50px;
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
         }
         &:nth-child(9){
             position: absolute;
@@ -71,7 +73,7 @@
             width: 120px;
         }
     }
-
+   
     &__content{
         position: relative;
         display: flex;

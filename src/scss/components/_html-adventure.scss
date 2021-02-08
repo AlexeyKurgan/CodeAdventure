@@ -33,7 +33,10 @@
             position: absolute;
             top: 0;
             right: 0;
-
+            animation-name: rotation;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
         &:nth-child(4){
             width: 110px;
@@ -52,12 +55,18 @@
             position: absolute;
             top: 47%;
             left: 20%;
+            animation: bounce 1s infinite ease;
+
         }
         &:nth-child(7){
             width: 110px;
             position: absolute;
             top: 0;
             left: 0;
+            animation-name: rotation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
         &:nth-child(8){
             position: absolute;
@@ -67,15 +76,15 @@
         }
         &:nth-child(9){
             position: absolute;
-            top: 40%;
-            right: 40%;
-            transform: rotate(310deg);
+            top: 50%;
+            right: 25%;
+            transform: rotate(337deg);
             width: 120px;
         }
         &:nth-child(10){
             position: absolute;
-            top: 10%;
-            left: 20%;
+            top: 20%;
+            left: 30%;
             width: 120px;
         }
     }

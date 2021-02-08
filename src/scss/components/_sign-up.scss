@@ -6,6 +6,7 @@
     min-height: 500px;
     background-color:$color1;
     z-index: 2;
+    overflow: hidden;
 
     &__content{
         z-index: 2;
@@ -55,7 +56,9 @@
     .star-svg4,
     .star-svg5,
     .star-svg6,
-    .star-svg7{
+    .star-svg7,
+    .star-svg8,
+    .star-svg9{
         position: absolute;
         z-index: 1;
     }
@@ -86,6 +89,14 @@
     }
     .star-svg7{
         top: 440px;
-        left: 514px
+        left: 514px;
+    }
+    .star-svg8{
+        bottom: 0;
+        right: 20%;
+    }
+    .star-svg9{
+        bottom: 0;
+        right: 40%;
     }
 }
