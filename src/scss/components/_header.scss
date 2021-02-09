@@ -1,6 +1,7 @@
 .header{
     width: 100%;
     min-height: 100px;
+    max-height: 180px;
     padding: 40px 70px;
     color:white;
     margin-bottom: 5px;
@@ -10,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    position: relative;
 
     &__logo-container{
         color: #ffffff;
@@ -95,6 +97,98 @@
             background-color:$color5;
             transition: all ease-out 0.8s;
          }
+        }
+    }
+
+    &__form-search{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -200px;
+        left: 0;
+        outline: none;
+        z-index: 12;
+        background-color:$color2;
+        transition: all ease-out 0.4s;
+
+        &_visible{
+            top:0;
+            transition: all ease-out 0.4s;
+        }
+
+        .d-flex{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            width: 50%;
+        }
+        input[type="search"],
+        input[type="submit"]{
+            height: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+            color:#ffffff;
+            background-color:$color1;
+            text-transform: uppercase;
+            font-family: 'StargazeRegular',sans-serif;
+            border:none;
+            transition: all ease-out 0.4s;
+            outline: transparent;
+
+            &:hover{
+                transition: all ease-out 0.4s;            
+                box-shadow:0px 0px 19px -4px #ffffff,
+                           0px 0px 19px -4px $color5;
+            }
+        }
+
+        input[type="search"]{
+            width: 50%;          
+            margin-right: 20px;
+            
+            &::placeholder{
+                color:#ffffff;
+            }
+        }
+        input[type="submit"]{
+            cursor: pointer;
+            
+        }     
+        
+    }
+    
+    &__form-close{
+        cursor:pointer;
+        position: relative;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        z-index: 13;
+
+        &:hover span{
+            transition: all ease-out 0.4s;
+            background-color:$color7;
+            
+        }
+        span{
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color:#ffffff;
+            transition: all ease-out 0.4s;
+
+            &:nth-child(2){
+                transform: rotate(-45deg);
+                top: 17px;
+                right: 0;
+            }
+            &:nth-child(1){
+                transform: rotate(45deg);
+                top: 17px;
+                right: 0;
+            }
         }
     }
 }

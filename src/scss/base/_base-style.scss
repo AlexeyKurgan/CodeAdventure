@@ -47,19 +47,15 @@ body {
 // paralax size elements
 [data-size="nano"] {
   width: 10%;
-  // border:1px solid red;
 }
 [data-size="small"] {
   width: 15%;
-  // border:1px solid green;
 }
 [data-size="medium"] {
   width: 20%;
-  // border:1px solid yellow;
 }
 [data-size="large"] {
   width: 25%;
-  // border:1px solid blue;
 }
 
 // base animation
@@ -92,4 +88,34 @@ body {
   25%	{ bottom: 0; }
   50%	{ top: 390px; }
   100%{ bottom: 0; }
+}
+
+// styles light theme
+
+.theme_light{
+  background-color:#F5FFFA !important;
+  color:black !important;
+
+  .header,
+  .footer{
+      color:black !important;
+  }
+
+  .header__actions-sign-in{
+      color:white !important;
+  }
+  a{
+      color:$color2 !important;
+
+      span{
+          color:black !important;
+      }
+  }
+  .header__form-search{
+      color:#ffffff;
+  }
+}
+
+.active{
+  background-color:$color5 !important;
 }
