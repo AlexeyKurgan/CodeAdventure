@@ -13,7 +13,7 @@ let percentY,percentX;
 
 const getParalaxEffect = function (containerParalax,icons){
   containerParalax.addEventListener('mousemove', (e) => {
-
+   
     percentX = ((e.clientX - containerParalax.clientWidth) * 50 / containerParalax.clientWidth) + ((e.clientX) * 50 / containerParalax.clientWidth);
     percentY = ((e.clientY - containerParalax.clientHeight) * 50 / containerParalax.clientHeight) + ((e.clientY) * 50 / containerParalax.clientHeight);
   

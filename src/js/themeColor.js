@@ -5,9 +5,30 @@ const themeBtn = document.querySelectorAll('.footer__settings-theme-btn');
 function setThemeColor(btnArr){
   btnArr.map((item)=>{
     item.addEventListener('click',(e)=>{
-    
-      if(e.target.id === 'lt'){
+      // const storage = {
+      //   selectedTheme:false
+      // }
+      // localStorage.setItem('theme_color',JSON.stringify(storage));
+
+      let selectedTheme = false;
+     
+      localStorage.setItem('selectedTheme',selectedTheme);
+
+
+      // console.log(localStorage.getItem('theme_color'));
+      
+
+      if(e.target.id === 'lt' && selectedTheme === false){
+        
+        // storage.light = true;
+        // storage.dark = false;
+
+        // console.log(storage);
+        // localStorage.selectedTheme = true;
+        console.log(localStorage.selectedTheme);
+        // console.log(localStorage.getItem('theme_color'));
         // localStorage.setItem('light_theme','test')
+        // localStorage.setItem('test1', header.classList.add('theme_light'))
         // const lightTheme = {
         //   header: header.classList.add('theme_light'),
         //   footer: footer.classList.add('theme_light'),
@@ -27,15 +48,17 @@ function setThemeColor(btnArr){
 
         
         // let storage = {
-        //   light : localStorage.setItem('light_theme',e.target.outerHTML),
-        //   btn1 : localStorage.setItem('btn[0]',btnArr[0].outerHTML),
-        //   btn2 : localStorage.setItem('btn[1]',btnArr[1].outerHTML),
-        // }
-         
-        // console.log(localStorage.getItem('btn[0]'))
-        // console.log(e)
+        //   light:e.target.outerHTML,
+        //   btn1 : btnArr[0].outerHTML,
+        //   btn2 : btnArr[1].outerHTML,
+        // };
+        
+        // localStorage.setItem('theme_light', JSON.stringify(storage))
+        // console.log(JSON.parse(localStorage.getItem('theme_light')));
       }
-  
+
+     
+     
       if(e.target.id === 'dk'){
         header.classList.remove('theme_light');
         footer.classList.remove('theme_light');
