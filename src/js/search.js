@@ -9,4 +9,3 @@ searchBtn.addEventListener('click',()=>{
 searchPopupClose.addEventListener('click',()=>{
   searchPopup.classList.remove('header__form-search_visible');
 })
-

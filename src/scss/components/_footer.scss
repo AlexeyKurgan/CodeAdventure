@@ -129,6 +129,12 @@
                 transition: all ease-out 0.8s;
            }
         }
+
+        .active{
+            outline: none;
+            border:none;
+            background-color:$color5 !important;
+          }
     }
 
     &__social-list{

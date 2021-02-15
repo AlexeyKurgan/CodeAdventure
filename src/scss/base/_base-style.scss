@@ -116,6 +116,11 @@ body {
   }
 }
 
-.active{
-  background-color:$color5 !important;
+
+:root[theme="light_theme"] {
+
+  .header{
+      background-color:red;
+  }
 }
+
