@@ -94,6 +94,7 @@ body {
 
 .theme_light{
   background-color:#F5FFFA !important;
+  
   color:black !important;
 
   .header,
@@ -103,6 +104,12 @@ body {
 
   .header__actions-sign-in{
       color:white !important;
+      
+  }
+  .header__actions-sign-up{
+    &:hover{
+      color:white !important;
+    }
   }
   a{
       color:$color2 !important;
