@@ -1,4 +1,4 @@
-.sign-up{
+.promo{
     color:#ffff;
     position: relative;
     display: flex;
@@ -39,7 +39,7 @@
         }
     }
 
-    &__link{
+    &__sign-up{
         transition: all ease-out 0.8s;
         width: 170px;
         background-color:$color2;

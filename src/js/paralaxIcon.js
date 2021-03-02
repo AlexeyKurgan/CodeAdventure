@@ -1,5 +1,5 @@
 // container for paralax
-const signUpContainer = document.querySelector('.sign-up'),
+const signUpContainer = document.querySelector('.promo'),
       jsAdventureContainer = document.querySelector('.js-adventure'),
       htmlAdventureContainer = document.querySelector('.html-adventure'),
       cssAdventureContainer = document.querySelector('.css-adventure');

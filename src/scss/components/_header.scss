@@ -192,3 +192,9 @@
         }
     }
 }
+
+.homepage {
+    .header__logo-container{
+      pointer-events: none;
+    }
+}
