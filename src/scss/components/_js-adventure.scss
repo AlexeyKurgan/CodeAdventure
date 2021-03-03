@@ -1,11 +1,13 @@
 .js-adventure{
     width: 100%;
-    min-height: 450px;
+    // min-height: 450px;
+    min-height: 100vh;
     height: 100vh;
     background-color:$color3;
     padding: 40px 70px;
     display: flex;
-
+    flex: 1;
+    
     &__icons-container{
         position: relative;
         width: 50%;

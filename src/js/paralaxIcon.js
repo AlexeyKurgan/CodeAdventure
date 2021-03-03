@@ -1,6 +1,6 @@
 (function (){
     // container for paralax
-    const signUpContainer = document.querySelector('.promo'),
+    const promoContainer = document.querySelector('.promo'),
         jsAdventureContainer = document.querySelector('.js-adventure'),
         htmlAdventureContainer = document.querySelector('.html-adventure'),
         cssAdventureContainer = document.querySelector('.css-adventure');
@@ -13,6 +13,7 @@
     let percentY,percentX;
 
     const getParalaxEffect = function (containerParalax,icons){
+
     containerParalax.addEventListener('mousemove', (e) => {
     
         percentX = ((e.clientX - containerParalax.clientWidth) * 50 / containerParalax.clientWidth) + ((e.clientX) * 50 / containerParalax.clientWidth);
@@ -37,7 +38,7 @@
     });
     } 
 
-    getParalaxEffect(signUpContainer,stars);
+    getParalaxEffect(promoContainer,stars);
     getParalaxEffect(jsAdventureContainer,jsAdventureIcons);
     getParalaxEffect(htmlAdventureContainer,htmlAdventureIcons);
     getParalaxEffect(cssAdventureContainer,cssAdventureIcons);

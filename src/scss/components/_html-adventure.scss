@@ -1,12 +1,14 @@
 .html-adventure{
     width: 100%;
-    min-height: 450px;
+    // min-height: 450px;
+    min-height: 100vh;
     height: 100vh;
     background-color:$color4;
     padding: 40px 70px;
     display: flex;
     flex-direction: row-reverse;
-
+    flex: 1;
+    
     &__icons-container{
         position: relative;
         width: 50%;
