@@ -1,135 +1,152 @@
 html {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  color:#ffffff;
-  background-color:$color1;
-  font-family: 'StargazeRegular',sans-serif;
-  letter-spacing: 2px;
-}
-.container{
-  width: 1600px;
-  margin: 0 auto;
-}
-
-.btn{
-  display: block;
-  width: 120px;
-  padding: 10px;
-  color:#ffffff;
-  border:1px solid $color2;
-  text-align: center;
-
-  &:hover{
-      text-decoration: none;
-      color:#ffffff;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
-}
-
-.title{
-  margin: 0;
-  font-size: 40px;
-  text-align:center;
-}
-
-.description{
-  max-width: 381px;
-  text-align: center;
-}
-
-// paralax size elements
-[data-size="nano"] {
-  width: 10%;
-}
-[data-size="small"] {
-  width: 15%;
-}
-[data-size="medium"] {
-  width: 20%;
-}
-[data-size="large"] {
-  width: 25%;
-}
-
-// base animation
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-@keyframes rotation {      
-  0% {
-      transform:rotate(0deg);
-  }
-  100% {
-      transform:rotate(360deg);
-  }
-}
-
-@keyframes bounce {
-  0%	{ bottom: 0; }
-  25%	{ bottom: 0; }
-  50%	{ top: 390px; }
-  100%{ bottom: 0; }
-}
-
-// styles light theme
-
-.theme_light{
-  background-color:#F5FFFA !important;
   
-  color:black !important;
-
-  .header,
-  .footer{
-      color:black !important;
+  body {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color:#ffffff;
+    background-color:$color1;
+    font-family: 'StargazeRegular',sans-serif;
+    letter-spacing: 2px;
   }
-
-  .header__actions-sign-in{
-      color:white !important;
-      
+  .container{
+    width: 1600px;
+    margin: 0 auto;
   }
-  .header__actions-sign-up{
+  
+  .logo{
+    color: #ffffff;
+    text-decoration: none;
+
     &:hover{
-      color:white !important;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    &:focus{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    img{
+        width: 70px;
+        height: 70px;
+    }
+
+    span{
+        text-transform: capitalize;
     }
   }
-  a{
-      color:$color2 !important;
 
-      span{
-          color:black !important;
+  .btn{
+    display: block;
+    width: 120px;
+    padding: 10px;
+    color:#ffffff;
+    border:1px solid $color2;
+    text-align: center;
+    font-family: 'StargazeRegular',sans-serif;
+    
+    &:hover{
+        text-decoration: none;
+        color:#ffffff;
+    }
+  }
+  
+  .title{
+    margin: 0;
+    font-size: 40px;
+    text-align:center;
+  }
+  
+  .description{
+    max-width: 381px;
+    text-align: center;
+  }
+  
+  // paralax size elements
+  [data-size="nano"] {
+    width: 10%;
+  }
+  [data-size="small"] {
+    width: 15%;
+  }
+  [data-size="medium"] {
+    width: 20%;
+  }
+  [data-size="large"] {
+    width: 25%;
+  }
+  
+  // base animation
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  @keyframes rotation {      
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+  }
+  
+  @keyframes bounce {
+    0%	{ bottom: 0; }
+    25%	{ bottom: 0; }
+    50%	{ top: 390px; }
+    100%{ bottom: 0; }
+  }
+  
+  // styles light theme
+  
+  .theme_light{
+    background-color:#F5FFFA !important;
+    
+    color:black !important;
+  
+    .header,
+    .footer{
+        color:black !important;
+    }
+  
+    .header__actions-sign-in{
+        color:white !important;
+        
+    }
+    .header__actions-sign-up{
+      &:hover{
+        color:white !important;
       }
+    }
+    a{
+        color:$color2 !important;
+  
+        span{
+            color:black !important;
+        }
+    }
+    .header__form-search{
+        color:#ffffff;
+    }
   }
-  .header__form-search{
-      color:#ffffff;
-  }
-}
-
-
-:root[theme="light_theme"] {
-
-  .header{
-      background-color:red;
-  }
-}
-
+  

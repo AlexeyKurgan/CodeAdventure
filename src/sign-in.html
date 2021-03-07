@@ -11,24 +11,64 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <!-- Include jquery 3.5.1 -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
 </head>
 <body>
-  <!-- Header section -->
-  <!-- @@include('layouts/header.html') -->
   
   <section class="sign-in">
-    <div class="test">
-      <svg viewBox="0 0 533.35 541.75" style="fill:#fff">
-        <g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M0,0H367.74s-2.25,3.88,42.65,17.38,81.26,30,98.22,70.66-2.74,66.66-12.78,83.87-28.05,49.83-26.48,93.66S475,311.48,480,325s39.7,71.74,49.35,107.22.78,63.13-15.39,82.44-47.22,45.13-124.7,37-169-38.35-222-34.17S44,555.33,0,639.75Z"/></g></g></svg>
+   
+    <div class="sign-in__column sign-in__column-left">
+      <a href="/" class="logo logo_sign-in">
+        <img src="../img/logo.svg" alt="logo solar system">
+        <span>Code Adventure</span>
+      </a>
+      
+      <form action="#" method="#" class="form">
+        <label class="form__title">Sign in to Adventure Code</label>
+
+        <div class="form__input form__name">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username or Email">
+        </div>
+        
+        <div class="form__input form__password">
+          <i class="fas fa-key"></i>
+          <input type="password" placeholder="Your password">
+        </div>
+        
+        <div class="form__input form__remember-me">
+          <input type="checkbox" class="checkbox" id="checkbox1" />
+          <label for="checkbox1">Remember me</label>
+        </div>
+
+        <div class="form__input form__send-btn">
+          <button class="login-btn btn" type="submit">Sign in</button>
+          <span>Forgot <a href="#">password?</a></span>
+        </div>
+
+        <div class="login-with">
+          <label class="login-with__title">Or login with</label>
+          <div class="login-with__button-wrap">
+            <button><i class="fab fa-google"></i></button>
+            <button><i class="fab fa-facebook-f"></i></button>
+          </div> 
+        </div>
+
+        <div class="form__link-to-sign-up">
+          <span>Not a member?<a href="sign-up.html" class="create-account"> Sign up now</a></span>
+        </div>
+       
+      </form>
+      
+     <img class="sign-in__earth-img" src="img/3pack/planet-earth.svg" alt="planet earth">
+     <img class="sign-in__space-station-img" src="img/3pack/space-station.svg" alt="space-station">
     </div>
-    <div class="test"></div>
+    <div class="sign-in__column sign-in__column-right">
+      <img class="sign-in__mars" src="img/3pack/mars.svg">
+      <img class="sign-in__austronaut" src="img/4pack/012-astronaut.svg" alt="austronaut">
+      <img class="sign-in__jupiter" src="img/3pack/jupiter.svg" alt="jupiter">
+      <img class="sign-in__moon" src="img/3pack/moon.svg" alt="moon">
+    </div>
   </section>
 
-  <!-- footer section -->
-  <!-- @@include('layouts/footer.html') -->
-
-  <script src="js/search.js"></script>
-  <script src="js/themeColor.js"></script>
 </body>
 </html>

@@ -13,30 +13,6 @@
     z-index: 1;
     position: relative;
 
-    &__logo-container{
-        color: #ffffff;
-        text-decoration: none;
-
-        &:hover{
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        &:focus{
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        img{
-            width: 70px;
-            height: 70px;
-        }
-
-        span{
-            text-transform: capitalize;
-        }
-    }
-
     &__nav-list{
         display: flex;
         margin: 0;
