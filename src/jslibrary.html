@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Library</title>
+  <!-- include style.min.css -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- include font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <!-- Include jquery 3.5.1 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <!-- header section -->
+  @@include('layouts/header.html')
+
+  <!-- content section -->
+  <section class="library-wrap">
+    <div class="container">
+      <div class="library-wrap__inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <i class="fas fa-home"></i>
+            <a href="/">Home</a>
+            <i class="fas fa-hand-point-right"></i>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="jslibrary.html">JavaScript library</a>
+            <i class="fas fa-hand-point-right"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="tabs">
+      <div class="container">
+        <div class="tabs__inner">
+          <ul class="tabs__list">
+            <li class="tabs__item active"><a href="#">All</a></li>
+            <li class="tabs__item"><a href="#">Code examples</a></li>
+            <li class="tabs__item"><a href="#">Books</a></li>
+            <li class="tabs__item"><a href="#">Video</a></li>
+            <li class="tabs__item"><a href="#">articles</a></li>
+          </ul> 
+        </div>
+      </div>  
+    </section>
+
+    <section class="settings">
+      <div class="container">
+        <div class="settings__inner">
+
+          <div class="settings-group">
+            <button class="btn settings-group__item"><i class="fas fa-filter"></i>Filter</button>
+            <button class="btn settings-group__item"><i class="fas fa-sort"></i>Sort</button>
+          </div>
+
+          <div class="settings-group">
+            <button class="btn settings-group__item"><i class="fas fa-list"></i>List</button>
+            <button class="btn settings-group__item"><i class="fas fa-th-large"></i>Grid</button>
+          </div>
+        </div>     
+      </div>
+    </section>
+
+  </section>
+
+  <!-- footer -->
+  @@include('layouts/footer.html')
+
+  <script src="js/search.js"></script>
+  <script src="js/themeColor.js"></script>
+</body>
+</html>

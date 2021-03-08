@@ -45,6 +45,12 @@ html {
     }
   }
 
+  .active{
+    outline: none;
+    border:none;
+    background-color:$color5 !important;
+  }
+
   .btn{
     display: block;
     width: 120px;
