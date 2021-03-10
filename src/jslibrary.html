@@ -19,52 +19,62 @@
   <!-- content section -->
   <section class="library-wrap">
     <div class="container">
-      <div class="library-wrap__inner">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <i class="fas fa-home"></i>
-            <a href="/">Home</a>
-            <i class="fas fa-hand-point-right"></i>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="jslibrary.html">JavaScript library</a>
-            <i class="fas fa-hand-point-right"></i>
-          </li>
-        </ul>
+
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <i class="fas fa-home"></i>
+          <a href="/">Home</a>
+          <i class="fas fa-hand-point-right"></i>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="jslibrary.html">JavaScript library</a>
+          <i class="fas fa-hand-point-right"></i>
+        </li>
+      </ul>
+
+      <div class="tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item active"><a href="#">All</a></li>
+          <li class="tabs__item"><a href="#">Posts</a></li>
+          <li class="tabs__item"><a href="#">Books</a></li>
+          <li class="tabs__item"><a href="#">Video</a></li>   
+        </ul> 
+      </div>
+
+      <div class="settings">
+        <div class="settings-group">
+          <button class="btn settings-group__item"><i class="fas fa-filter"></i>Filter</button>
+          <button class="btn settings-group__item"><i class="fas fa-sort"></i>Sort</button>
+        </div>
+  
+        <div class="settings-group">
+          <button class="btn settings-group__item"><i class="fas fa-list"></i>List</button>
+          <button class="btn settings-group__item"><i class="fas fa-th-large"></i>Grid</button>
+        </div>
+      </div>
+
+      <div class="post-container">
+        <article class="post-list">
+          <div class="post-list__img-container"><img src="img/cartoon.jpg" alt="item image"></div>
+          <div class="post-list__content">
+              <h3 class="post-list__content-title">Functional JavaScript First Steps</h3>
+              <span class="post-list__content-desc">
+                You may have found yourself hearing more and more about this trendy topic of 'functional programming', 
+                from a bunch of excited coders enthusiastically gushing about how it helps them write elegant,
+                modular code that's easier to test, debug, and reason about. If you're like me, you may have started asking questions like, 
+                "What is functional programming anyway, and why are people so excited about it?" "What does functional code look like? How is it different from imperative or OO code?" 
+                and "What tools do I need to write functional programs? Do I have to learn Haskell? (spoiler alert: no!)"
+              </span>
+              <div class="post-list__stats">
+                  <div class="post-list__stats-info">
+
+                  </div>
+                  <button class="post-list__stats-btn btn">View</button>
+              </div>
+          </div>
+        </article>
       </div>
     </div>
-
-    <section class="tabs">
-      <div class="container">
-        <div class="tabs__inner">
-          <ul class="tabs__list">
-            <li class="tabs__item active"><a href="#">All</a></li>
-            <li class="tabs__item"><a href="#">Code examples</a></li>
-            <li class="tabs__item"><a href="#">Books</a></li>
-            <li class="tabs__item"><a href="#">Video</a></li>
-            <li class="tabs__item"><a href="#">articles</a></li>
-          </ul> 
-        </div>
-      </div>  
-    </section>
-
-    <section class="settings">
-      <div class="container">
-        <div class="settings__inner">
-
-          <div class="settings-group">
-            <button class="btn settings-group__item"><i class="fas fa-filter"></i>Filter</button>
-            <button class="btn settings-group__item"><i class="fas fa-sort"></i>Sort</button>
-          </div>
-
-          <div class="settings-group">
-            <button class="btn settings-group__item"><i class="fas fa-list"></i>List</button>
-            <button class="btn settings-group__item"><i class="fas fa-th-large"></i>Grid</button>
-          </div>
-        </div>     
-      </div>
-    </section>
-
   </section>
 
   <!-- footer -->
