@@ -9,7 +9,7 @@
     margin: 0;
     padding: 20px 0;
     background-color:$color2;
-
+    
     &__item{
       display: flex;
       align-items:center;
@@ -127,12 +127,28 @@
     padding-top: 50px;
 
     .post-list{
+      position: relative;
       border:2px solid $color5;
       display: flex;
       border-radius: 5px;
       width: 100%;
       min-height: 200px;
       box-shadow: 0 0 5px 5px $color2;
+      margin-bottom: 40px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &__type{
+        position: absolute;
+        left: 15px;
+        top: 10px;
+
+        i{
+          font-size: 25px;
+        }
+      }
 
       &__img-container{
         width: 35%;
@@ -164,17 +180,58 @@
         justify-content: space-between;
         align-items: flex-end;
         min-height: 100px;
-        border:1px solid red;
+       
 
         &-info{
+          display:flex;
+          align-items: center;
+          list-style: none;
+          padding: 0;
+          margin: 0;
           min-width: 350px;
           min-height: 50px;
-          border:1px solid yellow;
         }
 
-        &-btn{
+        &-item{
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 15px;
+          margin-right: 15px;
+
+          i{
+            margin-right: 8px;            
+          }
+        }
+
+        &-link{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color:#ffffff;
+          text-decoration: none;
+        }
+
+        &-bookmark{
+          color:#ffffff;
+          background-color: transparent;
+          border: none;
+          cursor:pointer;
+          font-family: 'StargazeRegular',sans-serif;
+          padding: 0;
+        }
+
+        &-btn-view{
           background-color: $color2;
           margin-right: 20px;
+          transition: all ease-out 0.4s;
+          cursor:pointer;
+
+          &:hover{
+            transition: all ease-out 0.4s;
+            background-color:$color5;
+            
+          }
         }
       }
     }

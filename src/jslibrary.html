@@ -48,13 +48,16 @@
         </div>
   
         <div class="settings-group">
-          <button class="btn settings-group__item"><i class="fas fa-list"></i>List</button>
+          <button class="btn settings-group__item active"><i class="fas fa-list"></i>List</button>
           <button class="btn settings-group__item"><i class="fas fa-th-large"></i>Grid</button>
         </div>
       </div>
 
       <div class="post-container">
         <article class="post-list">
+          <div class="post-list__type">
+            <i class="fas fa-video"></i>
+          </div>
           <div class="post-list__img-container"><img src="img/cartoon.jpg" alt="item image"></div>
           <div class="post-list__content">
               <h3 class="post-list__content-title">Functional JavaScript First Steps</h3>
@@ -66,10 +69,193 @@
                 and "What tools do I need to write functional programs? Do I have to learn Haskell? (spoiler alert: no!)"
               </span>
               <div class="post-list__stats">
-                  <div class="post-list__stats-info">
-
-                  </div>
-                  <button class="post-list__stats-btn btn">View</button>
+                <ul class="post-list__stats-info">
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span class="post-list__stats-date">11.03.2021</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                      <button class="post-list__stats-bookmark">
+                        <i class="fas fa-bookmark"></i>
+                        <span>100</span>
+                      </button> 
+                  </li>
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-eye"></i>
+                      <span class="post-list__stats-views">9.4K</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                    <a class="post-list__stats-link" href="#">
+                        <i class="fas fa-comments"></i>
+                        <span class="post-list__stats-comments">145</span>
+                    </a>
+                  </li>
+                </ul>
+                <button class="post-list__stats-btn-view btn">View</button>
+              </div>
+          </div>
+        </article>
+        <article class="post-list">
+          <div class="post-list__type">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="post-list__img-container"><img src="img/cartoon.jpg" alt="item image"></div>
+          <div class="post-list__content">
+              <h3 class="post-list__content-title">Functional JavaScript First Steps</h3>
+              <span class="post-list__content-desc">
+                You may have found yourself hearing more and more about this trendy topic of 'functional programming', 
+                from a bunch of excited coders enthusiastically gushing about how it helps them write elegant,
+                modular code that's easier to test, debug, and reason about. If you're like me, you may have started asking questions like, 
+                "What is functional programming anyway, and why are people so excited about it?" "What does functional code look like? How is it different from imperative or OO code?" 
+                and "What tools do I need to write functional programs? Do I have to learn Haskell? (spoiler alert: no!)"
+              </span>
+              <div class="post-list__stats">
+                <ul class="post-list__stats-info">
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span class="post-list__stats-date">11.03.2021</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                      <button class="post-list__stats-bookmark">
+                        <i class="fas fa-bookmark"></i>
+                        <span>100</span>
+                      </button> 
+                  </li>
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-eye"></i>
+                      <span class="post-list__stats-views">9.4K</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                    <a class="post-list__stats-link" href="#">
+                        <i class="fas fa-comments"></i>
+                        <span class="post-list__stats-comments">145</span>
+                    </a>
+                  </li>
+                </ul>
+                <button class="post-list__stats-btn-view btn">View</button>
+              </div>
+          </div>
+        </article>
+        <article class="post-list">
+          <div class="post-list__type">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="post-list__img-container"><img src="img/cartoon.jpg" alt="item image"></div>
+          <div class="post-list__content">
+              <h3 class="post-list__content-title">Functional JavaScript First Steps</h3>
+              <span class="post-list__content-desc">
+                You may have found yourself hearing more and more about this trendy topic of 'functional programming', 
+                from a bunch of excited coders enthusiastically gushing about how it helps them write elegant,
+                modular code that's easier to test, debug, and reason about. If you're like me, you may have started asking questions like, 
+                "What is functional programming anyway, and why are people so excited about it?" "What does functional code look like? How is it different from imperative or OO code?" 
+                and "What tools do I need to write functional programs? Do I have to learn Haskell? (spoiler alert: no!)"
+              </span>
+              <div class="post-list__stats">
+                <ul class="post-list__stats-info">
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span class="post-list__stats-date">11.03.2021</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                      <button class="post-list__stats-bookmark">
+                        <i class="fas fa-bookmark"></i>
+                        <span>100</span>
+                      </button> 
+                  </li>
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-eye"></i>
+                      <span class="post-list__stats-views">9.4K</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                    <a class="post-list__stats-link" href="#">
+                        <i class="fas fa-comments"></i>
+                        <span class="post-list__stats-comments">145</span>
+                    </a>
+                  </li>
+                </ul>
+                <button class="post-list__stats-btn-view btn">View</button>
+              </div>
+          </div>
+        </article>
+        <article class="post-list">
+          <div class="post-list__type">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="post-list__img-container"><img src="img/cartoon.jpg" alt="item image"></div>
+          <div class="post-list__content">
+              <h3 class="post-list__content-title">Functional JavaScript First Steps</h3>
+              <span class="post-list__content-desc">
+                You may have found yourself hearing more and more about this trendy topic of 'functional programming', 
+                from a bunch of excited coders enthusiastically gushing about how it helps them write elegant,
+                modular code that's easier to test, debug, and reason about. If you're like me, you may have started asking questions like, 
+                "What is functional programming anyway, and why are people so excited about it?" "What does functional code look like? How is it different from imperative or OO code?" 
+                and "What tools do I need to write functional programs? Do I have to learn Haskell? (spoiler alert: no!)"
+              </span>
+              <div class="post-list__stats">
+                <ul class="post-list__stats-info">
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span class="post-list__stats-date">11.03.2021</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                      <button class="post-list__stats-bookmark">
+                        <i class="fas fa-bookmark"></i>
+                        <span>100</span>
+                      </button> 
+                  </li>
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-eye"></i>
+                      <span class="post-list__stats-views">9.4K</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                    <a class="post-list__stats-link" href="#">
+                        <i class="fas fa-comments"></i>
+                        <span class="post-list__stats-comments">145</span>
+                    </a>
+                  </li>
+                </ul>
+                <button class="post-list__stats-btn-view btn">View</button>
+              </div>
+          </div>
+        </article>
+        <article class="post-list">
+          <div class="post-list__type">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="post-list__img-container"><img src="img/cartoon.jpg" alt="item image"></div>
+          <div class="post-list__content">
+              <h3 class="post-list__content-title">Functional JavaScript First Steps</h3>
+              <span class="post-list__content-desc">
+                You may have found yourself hearing more and more about this trendy topic of 'functional programming', 
+                from a bunch of excited coders enthusiastically gushing about how it helps them write elegant,
+                modular code that's easier to test, debug, and reason about. If you're like me, you may have started asking questions like, 
+                "What is functional programming anyway, and why are people so excited about it?" "What does functional code look like? How is it different from imperative or OO code?" 
+                and "What tools do I need to write functional programs? Do I have to learn Haskell? (spoiler alert: no!)"
+              </span>
+              <div class="post-list__stats">
+                <ul class="post-list__stats-info">
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span class="post-list__stats-date">11.03.2021</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                      <button class="post-list__stats-bookmark">
+                        <i class="fas fa-bookmark"></i>
+                        <span>100</span>
+                      </button> 
+                  </li>
+                  <li class="post-list__stats-item">
+                      <i class="fas fa-eye"></i>
+                      <span class="post-list__stats-views">9.4K</span>
+                  </li>
+                  <li class="post-list__stats-item">
+                    <a class="post-list__stats-link" href="#">
+                        <i class="fas fa-comments"></i>
+                        <span class="post-list__stats-comments">145</span>
+                    </a>
+                  </li>
+                </ul>
+                <button class="post-list__stats-btn-view btn">View</button>
               </div>
           </div>
         </article>
