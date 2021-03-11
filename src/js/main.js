@@ -10,10 +10,9 @@ let firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// firebase.analytics();
 
 
-// document.addEventListener('DOMContentLoaded', e =>{
-//   const app = firebase.app();
-//   console.log(app)
-// })
+const db = firebase.database();
+let test = db.ref('name');
+test.on('value',(elem) => console.log(elem.val()));
