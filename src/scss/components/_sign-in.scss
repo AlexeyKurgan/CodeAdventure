@@ -93,9 +93,8 @@
 
             &:checked + label:after{
               position: absolute;
-              top: 2px;
-              left: 2.5px;
-              border: 1px solid white;
+              top: 2.5px;
+              left: 2.9px;
               background: $color2;
               height: 14px;
               width: 14px;
@@ -114,8 +113,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 19px;
-                height: 18px;
+                width: 20px;
+                height: 20px;
                 border: 2px solid #ccc;
                 border-radius: 3px;
               }

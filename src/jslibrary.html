@@ -43,13 +43,13 @@
 
       <div class="settings">
         <div class="settings-group">
-          <button class="btn settings-group__item"><i class="fas fa-filter"></i>Filter</button>
-          <button class="btn settings-group__item"><i class="fas fa-sort"></i>Sort</button>
+          <button id="filter" class="btn settings-group__item"><i class="fas fa-filter"></i>Filter</button>
+          <button id="sort" class="btn settings-group__item"><i class="fas fa-sort"></i>Sort</button>
         </div>
   
         <div class="settings-group">
-          <button class="btn settings-group__item active"><i class="fas fa-list"></i>List</button>
-          <button class="btn settings-group__item"><i class="fas fa-th-large"></i>Grid</button>
+          <button id="list" class="btn settings-group__item active"><i class="fas fa-list"></i>List</button>
+          <button id="grid" class="btn settings-group__item"><i class="fas fa-th-large"></i>Grid</button>
         </div>
       </div>
 
@@ -266,6 +266,7 @@
   <!-- footer -->
   @@include('layouts/footer.html')
 
+  <script src="js/settings.js"></script>
   <script src="js/search.js"></script>
   <script src="js/themeColor.js"></script>
 </body>

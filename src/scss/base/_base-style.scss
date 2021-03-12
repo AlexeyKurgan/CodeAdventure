@@ -51,6 +51,13 @@ html {
     background-color:$color5 !important;
   }
 
+  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border:1px solid red;
+  }
+
   .btn{
     display: block;
     width: 120px;
