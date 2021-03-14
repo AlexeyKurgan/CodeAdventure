@@ -51,12 +51,31 @@ html {
     background-color:$color5 !important;
   }
 
+  // grid styles
   .grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border:1px solid red;
   }
+
+  .grid-item{
+    flex-direction: column;
+    width: 49% !important;
+  }
+
+  .grid-content{
+    width: 100% !important;
+    
+    img{
+      height: 350px !important;
+    }
+  }
+
+  .post-desc-mb{
+    margin-bottom: 15px !important;
+  }
+
+  // end grid styles
 
   .btn{
     display: block;

@@ -167,6 +167,137 @@
             }
         }
     }
+
+    // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { 
+//     border:3px solid red;
+//  }
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { 
+//     border:3px solid yellow;
+//  }
+
+// Large devices (desktops, 992px and up)
+
+
+// @media (min-width: 0px) and (max-width: 622px) {
+    
+// }
+@media (min-width: 768px) and (max-width: 990px) {
+    border:3px solid green;
+    padding: 10px 10px;
+
+    .logo{
+        img{
+            width: 50px;
+            height: 50px;
+        }     
+    }
+
+    &__nav-item{
+        margin-left: 5px;
+        margin-right: 5px;   
+        font-size: 13px;
+
+        a{
+            padding: 5px 5px;
+        }
+    }
+}
+
+@media (min-width: 991.98px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    min-height: 230px;
+    border:3px solid red;
+    flex-direction:column;
+
+    &__form-search{
+        border:1px solid yellow;
+        top:-230px;
+    }
+    // .logo{
+    //     img{
+    //         width: 50px;
+    //         height: 50px;
+    //     }
+    //     span{
+    //         font-size: 11px;
+    //     }
+    // }
+    // &__nav-list{
+    //     display: contents;
+    //     width: 50%;
+    // }
+
+    // &__nav-item {
+    //     margin-left: 0px;
+    //     margin-right: 0px;
+
+    //     a{
+    //         padding: 0px 0px;
+    //         font-size: 11px;
+    //     }  
+    // }
+
+    // &__search-container{
+    //     font-size: 20px;
+    // }
+
+    // &__actions a {
+    //     font-size: 11px;
+    //     width: 102px;
+    //     padding: 5px;
+    // }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1651px) {
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    min-height: 100px;
+    border:3px solid greenyellow;
+
+    .logo{
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        span{
+            font-size: 11px;
+        }
+    }
+    &__nav-list{
+        display: contents;
+        width: 50%;
+    }
+
+    &__nav-item {
+        margin-left: 0px;
+        margin-right: 0px;
+
+        a{
+            padding: 0px 0px;
+            font-size: 11px;
+        }  
+    }
+
+    &__search-container{
+        font-size: 20px;
+    }
+
+    &__actions a {
+        font-size: 11px;
+        width: 102px;
+        padding: 5px;
+    }
+}
+@media (min-width: 1651.98px) and (max-width: 1900px) {
+    border:3px solid orangered;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+}
+
 }
 
 .homepage {

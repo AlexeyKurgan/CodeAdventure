@@ -107,6 +107,11 @@
         cursor: pointer;
         margin-right: 25px;
 
+        &:focus{
+          outline: 1px solid $color5;
+          border: none;
+        }
+
         i{
           margin-right: 10px;
         }
@@ -151,10 +156,12 @@
       }
 
       &__img-container{
-        width: 35%;
-      
+        width: 40%;
+        
+
         img{
           width: 100%;
+          height: 100%;
           object-fit: cover;
         }
       }
@@ -165,6 +172,7 @@
         padding: 20px;
 
         &-title{
+          margin-bottom: 50px;
           text-align: center;
         }
 
@@ -226,6 +234,11 @@
           margin-right: 20px;
           transition: all ease-out 0.4s;
           cursor:pointer;
+
+          &:focus{
+            outline: 1px solid $color5;
+            border: none;
+          }
 
           &:hover{
             transition: all ease-out 0.4s;

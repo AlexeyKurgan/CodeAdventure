@@ -1,57 +1,70 @@
-const settings = document.querySelectorAll('.settings-group button');
+(function(){
+  const settings = document.querySelectorAll('.settings-group button'),
+        postList = document.querySelectorAll('.post-list'),
+        postContainer = document.querySelector('.post-container'),
+        postImageContainer = document.querySelectorAll('.post-list__img-container'),
+        postContent = document.querySelectorAll('.post-list__content'),
+        postDesc = document.querySelectorAll('.post-list__content-desc');
 
-function getSettingsBtn(buttons){
-    buttons.forEach(button => {
-     
-      button.addEventListener('click', e => {
-        switch(e.target.id){
+  function getSettingsBtn(buttons){
+    buttons.forEach(button => {     
+    button.addEventListener('click', e => {
+      setActiveButton(e);
+      getStylesGrid(e);
+      });
+    });
+  }
+
+  function getStylesGrid(e){
+    postList.forEach(post => {
+      switch(e.target.id){
         case 'filter':
-            console.log(e)
-            console.log('filter')
+
         break;
 
         case 'sort':
           
-            console.log(e)
-            console.log('sort')
-      
-        break;
-
-        case 'grid':
-          // button.addEventListener('click',setGridButtonStyle);
-          setGridButtonStyle()
         break;
 
         case 'list':
-          // button.addEventListener('click',setListButtonStyle);
-         
+          postContainer.classList.remove('grid');
+          post.classList.remove('grid-item');
+          togglePostContentClass();
+        break;
+
+        case 'grid':
+          postContainer.classList.add('grid');
+          post.classList.add('grid-item');
+          togglePostContentClass();
         break;
       }
-      })
-    })
-}
+    });
+  }
 
-function setListButtonStyle(e){
-  const postList = document.querySelectorAll('.post-list');
-  const postContainer = document.querySelector('.post-container');
-  postContainer.classList.remove('grid');
+  function setActiveButton(e){
+    if(e.target.id === 'list'){
+      e.target.classList.add('active');
+      e.target.nextElementSibling.classList.remove('active');
+    }
+    if(e.target.id === 'grid'){
+      e.target.previousElementSibling.classList.remove('active');
+      e.target.classList.add('active');
+    }
+  }
 
-  postList.forEach(post => {
-    post.style.width = '100%';
-  })
-  postContainer.classList.remove('grid');
-}
+  function togglePostContentClass(){
+    postImageContainer.forEach(item => {
+      item.classList.toggle('grid-content');
+    });
+    postContent.forEach(item => {
+      item.classList.toggle('grid-content');
+    });
+    postDesc.forEach(item => {
+      item.classList.toggle('post-desc-mb');
+    });
+  }
 
-function setGridButtonStyle(){
-  const postList = document.querySelectorAll('.post-list');
-  const postContainer = document.querySelector('.post-container');
+  getSettingsBtn(settings);
+}());
 
-  postList.forEach(post => {
-    post.style.width = '45%';
-  })
-  
-  postContainer.classList.add('grid');
-  // e.target.classList.add('active')
-}
 
-getSettingsBtn(settings)
