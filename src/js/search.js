@@ -4,7 +4,8 @@
   const searchPopup = document.querySelector('.header__form-search');
   const searchPopupClose = document.querySelector('.header__form-close');
 
-  searchBtn.addEventListener('click',()=>{
+  searchBtn.addEventListener('click',(e)=>{
+    e.stopPropagation();
       searchPopup.classList.add('header__form-search_visible');
   })
 
