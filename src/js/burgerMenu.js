@@ -1,28 +1,17 @@
 const mobileMenu = document.querySelector('.header__burger-menu');
-// const mobileMenuTest = document.querySelector('.header__burger-menu');
-// console.log(mobileMenuTest)
-
-// mobileMenuTest.forEach(item => {
-//   item.addEventListener('click',e => {
-//     e.stopPropagation();
-//     console.log('e', e)
-//     console.log('e.target', e)
-//     console.log('children',e.target.children)
-//   })
-// })
-
 
 mobileMenu.addEventListener('click', e => {
+  if(e.target.nodeName === 'DIV'){
+    const span = [...e.path[0].children];
+    span.forEach(item => {
+    item.classList.toggle('burger-active');
+    });
+  }
   
-  // e.stopPropagation();
-  const span = [...e.path[0].children];
-  console.log(span)
-  // console.log(e.path[0].children)
-  // console.log('click burger menu container', span);
-
-
-  // span.forEach(item => {
-  //   console.log(item, 'click span');
-  //   item.classList.toggle('burger-active');
-  // })
+  if(e.target.nodeName === 'SPAN'){
+    const span = [...e.path[1].children];
+    span.forEach(item => {
+      item.classList.toggle('burger-active');
+      });
+  } 
 })
