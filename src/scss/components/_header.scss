@@ -194,7 +194,7 @@
     position: relative;
     position: fixed;
     margin-bottom: 0;
-    
+
     .logo{
         
         img{
@@ -262,7 +262,8 @@
         flex-wrap: wrap; 
         transition: all ease-out 0.4s;
         border-bottom:2px solid $color2;
-        
+        // overflow-x: hidden;
+        // overflow-y: hidden;
 
         &-top{
             width: 100%;
