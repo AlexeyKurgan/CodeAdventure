@@ -22,3 +22,4 @@ burgerMenu.addEventListener('click', e => {
   siteNavMobileBottom.classList.toggle('header__site-nav-mobile-bottom_active');
   actionsContainer[1].classList.toggle('header__actions-container_active');
 })
+

@@ -65,16 +65,12 @@ html {
 
   .grid-content{
     width: 100% !important;
-    
+
     img{
-      height: 350px !important;
+      min-width:100% !important;
     }
   }
-
-  .post-desc-mb{
-    margin-bottom: 15px !important;
-  }
-
+  
   // end grid styles
 
   .btn{

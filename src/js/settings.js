@@ -47,20 +47,33 @@
       e.target.nextElementSibling.classList.remove('active');
     }
     if(e.target.id === 'grid'){
-      e.target.previousElementSibling.classList.remove('active');
       e.target.classList.add('active');
+      e.target.previousElementSibling.classList.remove('active');
     }
   }
 
   function togglePostContentClass(){
     postImageContainer.forEach(item => {
-      item.classList.toggle('grid-content');
+      // item.classList.toggle('grid-content');
+      // item.classList.add('grid-content');
+      if(!item.classList.contains('grid-content')){
+        console.log(true)
+        item.classList.add('grid-content');
+      }
     });
     postContent.forEach(item => {
-      item.classList.toggle('grid-content');
+      if(!item.classList.contains('grid-content')){
+        console.log(true)
+        item.classList.add('grid-content');
+      }
+      // item.classList.toggle('grid-content');
     });
     postDesc.forEach(item => {
-      item.classList.toggle('post-desc-mb');
+      if(!item.classList.contains('post-desc-mb')){
+        console.log(true)
+        item.classList.add('post-desc-mb');
+      }
+      // item.classList.toggle('post-desc-mb');
     });
   }
 
