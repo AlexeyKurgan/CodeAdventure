@@ -258,8 +258,6 @@
             flex-wrap: wrap; 
             transition: all ease-out 0.4s;
             border-bottom:2px solid $color2;
-            // overflow-x: hidden;
-            // overflow-y: hidden;
 
             &-top{
                 width: 100%;
@@ -565,7 +563,6 @@
             width: 40%;
         }
     }
-
     /*------ Large devices styles ------*/
     @media (min-width: 991.98px) and (max-width: 1199px) {
         

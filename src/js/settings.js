@@ -54,26 +54,19 @@
 
   function togglePostContentClass(){
     postImageContainer.forEach(item => {
-      // item.classList.toggle('grid-content');
-      // item.classList.add('grid-content');
       if(!item.classList.contains('grid-content')){
-        console.log(true)
         item.classList.add('grid-content');
       }
     });
     postContent.forEach(item => {
       if(!item.classList.contains('grid-content')){
-        console.log(true)
         item.classList.add('grid-content');
       }
-      // item.classList.toggle('grid-content');
     });
     postDesc.forEach(item => {
       if(!item.classList.contains('post-desc-mb')){
-        console.log(true)
         item.classList.add('post-desc-mb');
       }
-      // item.classList.toggle('post-desc-mb');
     });
   }
 
